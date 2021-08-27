@@ -22,19 +22,24 @@ function App() {
   return (
     <>
       {showFields ? (
-        <div className="image">
-          <img src={logo} alt="logo" className="img" />
+        <div className="box">
+          <img src={logo} alt="logo" className="img1" />
+          <div className="text">
           <h1>Activity: {task && task.activity}</h1>
           <h2>Participants: {task && task.participants}</h2>
           <h3>Type: {task && task.type}</h3>
           <a href={task && task.link}>Wikepedia it</a>
           <br />
           <button onClick={() => refresh()}>new task</button>
+          </div>
         </div>
       ) : (
-        <div>
+        <div className="box">
+          <img src={logo} alt="logo" className="img1" />
+          <div className="text">
           <h1> Click me</h1>
           <button onClick={() => refresh()}>new task</button>
+          </div>
         </div>
       )}
     </>

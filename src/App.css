@@ -1,13 +1,13 @@
 
-.image{
+.box{
   position: relative;
   text-align: center;
 }
-.img{
-  width: 100%;
+.img1{
+  width: 50%;
 }
 
-h1 h2 h3{
+.text{
   position: absolute;
   top: 50%;
   left: 50%;
